@@ -1,11 +1,19 @@
 public class Runner {
     public static void main(String [] args){
-        System.out.println("Hello");
-        //haris oidjntrgengieo
-        //kunal edit hahah lmao
+
+        perfectSquare pS = (int x) ->
+        {
+			int sr = (int)Math.sqrt(x);
+			return (sr * sr) == x;
+		};
+		System.out.println(pS.perfects(9));
+
     }
 
-    public void quotient(float a, float b){
-		System.out.println(a/b);
+	interface perfectSquare{
+		boolean perfects(int x);
+
 	}
+
+
 }
