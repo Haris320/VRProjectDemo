@@ -1,11 +1,12 @@
 public class Runner {
-    public static void main(String [] args){
-        System.out.println("Hello");
-        //haris oidjntrgengieo
-        //kunal edit hahah lmao
-    }
 
-    public void quotient(float a, float b){
-		System.out.println(a/b);
-	}
+	 interface Quotient{
+	        void divide(float a, float b);
+	    }
+
+	    public static void main(String [] args){
+	        Quotient div = (a,b) -> System.out.printf("Number is approximately %.3f", a/b);
+	        div.divide(3.4124f,3.4f);
+	        System.out.println();
+    }
 }
