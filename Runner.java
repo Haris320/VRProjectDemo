@@ -4,11 +4,12 @@ public class Runner {
 	    }
 	    public static void main(String [] args)
         {
+			//I learned how to format using printf and lamda usage
 	        Quotient div = (a,b) -> System.out.printf("Number is approximately %.3f", a/b);
 	        div.divide(3.4124f,3.4f);
 	        System.out.println();
-            
-            
+
+
             perfectSquare pS = (int x) ->
             {
 		    	int sr = (int)Math.sqrt(x);
@@ -17,7 +18,7 @@ public class Runner {
 		    System.out.println(pS.perfects(9));
     }
 
-    
+
 	interface perfectSquare{
 		boolean perfects(int x);
 	}
