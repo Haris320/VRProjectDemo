@@ -7,8 +7,8 @@ public class Runner {
 	        Quotient div = (a,b) -> System.out.printf("Number is approximately %.3f", a/b);
 	        div.divide(3.4124f,3.4f);
 	        System.out.println();
-            
-            
+
+            //kunal - I learned how to use lambdas from interfaces and lambdas in general
             perfectSquare pS = (int x) ->
             {
 		    	int sr = (int)Math.sqrt(x);
@@ -17,7 +17,7 @@ public class Runner {
 		    System.out.println(pS.perfects(9));
     }
 
-    
+
 	interface perfectSquare{
 		boolean perfects(int x);
 	}
